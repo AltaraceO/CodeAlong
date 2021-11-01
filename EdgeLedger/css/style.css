@@ -92,3 +92,89 @@ img {
   max-width: 600px;
   margin: 20px 0 30px;
 }
+
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.hero * {
+  z-index: 10;
+}
+
+/* icons */
+.icons {
+  padding: 30px;
+}
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/*--------- round background around icons------- */
+.icons i {
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 15px;
+}
+
+.cases img:hover {
+  opacity: 0.7;
+}
+.team img {
+  border-radius: 30%;
+}
+
+/* callback */
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.callback-form .form-control {
+  margin-bottom: 25px;
+}
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: solid 1px #f5f5f5;
+}
+
+/* -----change the color of the input space when selected */
+.callback-form input:focus {
+  outline-color: #28a745;
+}
+.callback-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+/* footer */
+/* --------------------positioning of social media----------- */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  color: #28a745;
+}
+.footer .social > * {
+  margin-right: 30px;
+}
