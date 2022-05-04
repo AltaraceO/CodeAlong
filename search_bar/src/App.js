@@ -1,7 +1,7 @@
 import UserList from "./components/UserList";
 import { Route, Routes } from "react-router-dom";
 import UserDetail from "./components/UserDetail";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -26,10 +26,9 @@ function App() {
   );
   return (
     <div className="app">
-      <h1>Hello</h1>
       <Routes>
         <Route path="/" element={<UserList users={users} />}></Route>
-          <Route path="/:userId" element={<UserDetail />} />
+        <Route path="/:userId" element={<UserDetail />} />
       </Routes>
     </div>
   );
